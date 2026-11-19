@@ -4,487 +4,466 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SM Riyad Sagor | Digital Marketing Expert</title>
+<meta name="description" content="SM Riyad Sagor - Digital Marketing Professional. Digital Marketing, SEO, Social Media Marketing, Google Ads and Facebook Ads.">
+<meta name="keywords" content="Digital Marketing, SEO, Social Media Marketing, Facebook Ads, Google Ads">
+<meta name="author" content="SM Riyad Sagor">
+<title>SM Riyad Sagor | Digital Marketing Professional</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+:root {
+  --bg: #080d1b;
+  --card: #111b30;
+  --blue: #368bff;
+  --light: #75b5ff;
+  --white: #f5f8ff;
+  --muted: #aab7ce;
+  --border: #253653;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #080d18;
-  color: #fff;
-  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.7;
 }
 
-:root {
-  --blue: #3987ff;
-  --muted: #9aa9bd;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
 }
 
 header {
-  min-height: 85px;
-  padding: 20px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(8,13,27,.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.navbar {
+  min-height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(8,13,24,.95);
-  border-bottom: 1px solid #ffffff12;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .logo {
   font-size: 22px;
   font-weight: 800;
-  letter-spacing: -1px;
 }
 
-.logo span { color: var(--blue); }
+.logo span {
+  color: var(--blue);
+}
 
 nav {
   display: flex;
-  gap: 30px;
+  gap: 23px;
+  align-items: center;
 }
 
 nav a {
-  text-decoration: none;
-  color: #c1ccdc;
+  color: var(--muted);
   font-size: 13px;
   transition: .3s;
 }
 
-nav a:hover { color: var(--blue); }
+nav a:hover {
+  color: var(--blue);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
 
 .hero {
-  min-height: 680px;
-  padding: 100px 8%;
+  min-height: 650px;
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 1.3fr .7fr;
   align-items: center;
-  gap: 60px;
-  background:
-    radial-gradient(ellipse at 80% 45%, #12366a55, transparent 55%),
-    #080d18;
+  gap: 50px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
-/* PROFILE PHOTO */
-.profile-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px auto;
-}
-
-.profile-photo img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    object-fit: contain;
-    object-position: center top;
-    border-radius: 20px;
-    border: 3px solid #3988ff;
-    box-shadow: 0 0 30px #3988ff55;
-}
-  
 
 .tag {
-  color: #69a8ff;
-  border: 1px solid #3987ff66;
-  background: #3987ff12;
-  padding: 10px 17px;
-  border-radius: 30px;
   display: inline-block;
+  color: var(--light);
+  background: rgba(54,139,255,.12);
+  border: 1px solid rgba(54,139,255,.3);
+  border-radius: 30px;
+  padding: 7px 15px;
   font-size: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: clamp(40px,5vw,65px);
-  line-height: 1.13;
-  letter-spacing: -2px;
+  font-size: clamp(36px,5vw,58px);
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
-.hero h1 span { color: var(--blue); }
+.hero h1 span {
+  color: var(--blue);
+}
+
+.hero h2 {
+  color: var(--light);
+  font-size: 21px;
+  margin-bottom: 18px;
+}
 
 .hero p {
   color: var(--muted);
-  line-height: 1.9;
-  margin: 25px 0;
   font-size: 14px;
-  max-width: 500px;
+  margin-bottom: 25px;
 }
 
 .btn {
   display: inline-block;
-  padding: 15px 25px;
-  border-radius: 7px;
-  text-decoration: none;
+  padding: 12px 24px;
+  background: var(--blue);
+  color: white;
+  border-radius: 8px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   margin: 5px 8px 5px 0;
   transition: .3s;
 }
 
-.primary {
-  background: var(--blue);
-  color: white;
-}
-
-.secondary {
-  border: 1px solid #34435b;
-  color: white;
-}
-
 .btn:hover {
-  transform: translateY(-4px);
+  background: #1766d5;
+  transform: translateY(-3px);
 }
 
-/* COMPUTER WORKSPACE */
-
-.workspace {
-  position: relative;
-  padding: 20px 0;
-  animation: float 5s ease-in-out infinite;
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--blue);
+  color: var(--light);
 }
 
-@keyframes float {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+.profile-card {
+  background: linear-gradient(145deg,#17294a,#0e1729);
+  border: 1px solid #29436b;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 50px rgba(0,0,0,.3);
 }
 
-.screen {
-  background: #101b2e;
-  border: 2px solid #334866;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0 30px 90px #0009, 0 0 40px #247bff22;
+.profile-photo {
+  width: 100%;
+  height: 330px;
+  background: #0b1426;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
-.screen-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 5px 16px;
-  border-bottom: 1px solid #ffffff15;
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.dots {
-  display: flex;
-  gap: 6px;
+.profile-card h3 {
+  margin-top: 15px;
 }
 
-.dots i {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #ff625f;
-}
-
-.dots i:nth-child(2) { background: #ffbd4a; }
-.dots i:nth-child(3) { background: #3cce80; }
-
-.screen-label {
-  color: #7f94af;
-  font-size: 10px;
-}
-
-.dashboard {
-  display: grid;
-  grid-template-columns: 105px 1fr;
-  gap: 12px;
-  padding-top: 15px;
-  min-height: 290px;
-}
-
-.sidebar {
-  background: #0b1423;
-  padding: 12px 8px;
-  border-radius: 8px;
-}
-
-.side-item {
-  color: #8598b3;
-  font-size: 9px;
-  padding: 12px 5px;
-}
-
-.side-item.active {
-  background: #1c3965;
-  color: #69aaff;
-  border-radius: 5px;
-}
-
-.dash-main h3 {
+.profile-card p {
+  color: var(--light);
   font-size: 13px;
-  margin: 5px 0 13px;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 10px;
-}
-
-.stat {
-  background: #18263a;
-  padding: 13px;
-  border-radius: 8px;
-  border: 1px solid #ffffff0c;
-}
-
-.stat small {
-  color: #899bb1;
-  font-size: 9px;
-}
-
-.stat strong {
-  display: block;
-  margin-top: 8px;
-  font-size: 19px;
-}
-
-.up { color: #43d69a; font-size: 10px; }
-
-.chart {
-  background: #18263a;
-  margin-top: 12px;
-  padding: 12px;
-  border-radius: 8px;
-}
-
-.chart-title {
-  font-size: 10px;
-  color: #a8bad1;
-  margin-bottom: 12px;
-}
-
-.bars {
-  height: 95px;
-  display: flex;
-  align-items: end;
-  justify-content: space-around;
-  gap: 9px;
-  border-bottom: 1px solid #ffffff20;
-}
-
-.bar {
-  width: 11%;
-  background: linear-gradient(#48a3ff,#2460d5);
-  border-radius: 4px 4px 0 0;
-  animation: grow 2s ease-in-out infinite alternate;
-}
-
-.bar:nth-child(1) { height: 35%; }
-.bar:nth-child(2) { height: 55%; }
-.bar:nth-child(3) { height: 45%; }
-.bar:nth-child(4) { height: 80%; }
-.bar:nth-child(5) { height: 65%; }
-.bar:nth-child(6) { height: 100%; }
-
-@keyframes grow {
-  from { opacity: .65; }
-  to { opacity: 1; }
-}
-
-.keyboard {
-  height: 15px;
-  width: 110%;
-  margin-left: -5%;
-  background: linear-gradient(#71839a,#293b55);
-  clip-path: polygon(4% 0,96% 0,100% 100%,0 100%);
-  border-radius: 0 0 8px 8px;
-}
-
-.status {
-  position: absolute;
-  right: -12px;
-  bottom: 55px;
-  background: #142b27;
-  border: 1px solid #34c58c66;
-  color: #54e1a4;
-  padding: 12px 16px;
-  border-radius: 9px;
-  font-size: 11px;
-  box-shadow: 0 10px 30px #0008;
-}
-
-.status i {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background: #43d69a;
-  border-radius: 50%;
-  margin-right: 6px;
-}
-
-/* SECTIONS */
-
-section:not(.hero) {
-  padding: 85px 8%;
+section {
+  padding: 85px 0;
+  scroll-margin-top: 75px;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 45px;
-}
-
-.section-title span {
-  color: var(--blue);
-  font-size: 12px;
-  letter-spacing: 2px;
+  margin-bottom: 42px;
 }
 
 .section-title h2 {
-  font-size: 32px;
-  margin-top: 12px;
+  font-size: clamp(27px,4vw,38px);
+  margin-bottom: 8px;
 }
 
-.about {
-  background: #0d1524;
-  text-align: center;
+.section-title h2 span {
+  color: var(--blue);
 }
 
-.about p {
-  max-width: 750px;
-  margin: auto;
+.section-title p {
   color: var(--muted);
-  line-height: 2;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-.skills-grid, .work-grid {
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.box, .card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 26px;
+  transition: .3s;
+}
+
+.box:hover, .card:hover {
+  transform: translateY(-5px);
+  border-color: var(--blue);
+}
+
+.box h3, .card h3 {
+  color: var(--light);
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.box p, .card p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.point {
+  background: #192944;
+  padding: 12px;
+  border-radius: 9px;
+  font-size: 12px;
+  color: var(--light);
+}
+
+.services-grid, .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
 }
 
-.skill, .work {
-  background: #111d30;
-  border: 1px solid #263850;
-  border-radius: 12px;
-  padding: 28px;
-  transition: .3s;
-}
-
-.skill:hover, .work:hover {
-  transform: translateY(-7px);
-  border-color: var(--blue);
-}
-
-.skill h3, .work h3 {
+.icon {
+  font-size: 32px;
   margin-bottom: 12px;
-  font-size: 16px;
 }
 
-.skill p, .work p {
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+}
+
+.skill {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.skill h3 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.skill small {
   color: var(--muted);
   font-size: 12px;
-  line-height: 1.8;
 }
 
-.skill .number {
+.bar {
+  height: 8px;
+  background: #263650;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg,#1766d5,#75b5ff);
+  border-radius: 10px;
+}
+
+.portfolio-card {
+  min-height: 210px;
+}
+
+.portfolio-card .category {
+  color: var(--light);
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+.portfolio-card h3 {
+  margin-bottom: 10px;
+}
+
+.status {
+  display: inline-block;
+  color: #8fc2ff;
+  border: 1px solid #36577e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.contact-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 13px;
+}
+
+.contact-item h3 {
+  color: var(--light);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-item p, .contact-item a {
+  font-size: 13px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
   color: var(--blue);
-  font-size: 28px;
-  font-weight: 800;
-  margin-bottom: 18px;
 }
 
-.contact {
-  text-align: center;
-  background: #0d1524;
-}
-
-.contact p {
+.contact-note {
   color: var(--muted);
-  margin: 20px 0;
-  line-height: 1.8;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 25px;
-}
-
-.contact-links a {
-  text-decoration: none;
-  color: white;
-  background: #192b43;
-  border: 1px solid #304663;
-  border-radius: 7px;
-  padding: 13px 20px;
-  font-size: 12px;
-  transition: .3s;
-}
-
-.contact-links a:hover {
-  background: var(--blue);
+  font-size: 13px;
+  margin-top: 15px;
 }
 
 footer {
-  padding: 25px;
+  border-top: 1px solid var(--border);
+  padding: 25px 0;
   text-align: center;
-  color: #8191a6;
-  font-size: 11px;
-  border-top: 1px solid #ffffff12;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+footer span {
+  color: var(--blue);
 }
 
 @media(max-width:850px) {
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .hero {
+    gap: 25px;
+  }
+
+  .services-grid, .portfolio-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px) {
+  .menu-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: #0d1629;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 75px 6%;
+    padding-top: 55px;
   }
 
-  .hero p { margin: 25px auto; }
+  .hero p {
+    font-size: 13px;
+  }
 
-  .workspace {
-    max-width: 550px;
-    width: 100%;
+  .profile-card {
+    max-width: 350px;
     margin: auto;
+    width: 100%;
   }
 
-  .skills-grid, .work-grid {
+  .profile-photo {
+    height: 320px;
+  }
+
+  .about-content, .contact-content {
     grid-template-columns: 1fr;
   }
 
-  nav { gap: 13px; }
-}
-
-@media(max-width:520px) {
-  header {
-    padding: 18px 5%;
-    flex-direction: column;
-    gap: 17px;
+  .services-grid, .portfolio-grid, .skill-grid {
+    grid-template-columns: 1fr;
   }
 
-  nav a { font-size: 11px; }
-
-  .dashboard {
-    grid-template-columns: 75px 1fr;
+  section {
+    padding: 65px 0;
   }
-
-  .sidebar { padding: 8px 4px; }
-
-  .side-item { font-size: 8px; }
-
-  .stat { padding: 9px; }
-
-  .stat strong { font-size: 15px; }
-
-  section:not(.hero) { padding: 65px 6%; }
-
-  .status { right: -5px; }
 }
 </style>
 </head>
@@ -492,238 +471,440 @@ footer {
 <body>
 
 <header>
-  <div class="logo">SM RIYAD <span>SAGOR.</span></div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#work">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container navbar">
+    <a href="#home" class="logo">SM <span>RIYAD</span></a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-<section class="hero" id="home">
+<!-- HOME SECTION -->
+<section class="hero container" id="home">
 
   <div>
-    <div class="tag">✦ DIGITAL MARKETING PROFESSIONAL</div>
+    <span class="tag">WELCOME TO MY PORTFOLIO</span>
 
-    <h1>
-      Hi, I'm <br>
-      <span>SM Riyad Sagor</span>
-    </h1>
+    <h1>SM Riyad <span>Sagor</span></h1>
+
+    <h2>Digital Marketing Professional</h2>
 
     <p>
-      I focus on Search Engine Optimization,
-      E-commerce Marketing and Affiliate Marketing.
-      I am passionate about building digital experiences
-      and helping businesses grow their online presence.
+      I am passionate about Digital Marketing and online business growth.
+      I focus on helping businesses build their online presence through
+      Digital Marketing Strategy, SEO, Social Media Marketing, Facebook Ads,
+      Google Ads and Content Marketing.
     </p>
 
-    <a href="#contact" class="btn primary">
-      Let's Work Together →
-    </a>
-
-    <a href="#about" class="btn secondary">
-      Explore Profile
-    </a>
+    <a href="#services" class="btn">Explore My Services</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
   </div>
 
-  <div class="workspace">
-
-    <div class="screen">
-
-      <div class="screen-top">
-        <div class="dots">
-          <i></i><i></i><i></i>
-        </div>
-        <div class="screen-label">MY DIGITAL WORKSPACE</div>
-      </div>
-
-      <div class="dashboard">
-
-        <div class="sidebar">
-          <div class="side-item active">Dashboard</div>
-          <div class="side-item">SEO Tools</div>
-          <div class="side-item">Analytics</div>
-          <div class="side-item">Marketing</div>
-          <div class="side-item">Reports</div>
-        </div>
-
-        <div class="dash-main">
-          <h3>Marketing Overview</h3>
-
-          <div class="stats">
-            <div class="stat">
-              <small>SEO Projects</small>
-              <strong>SEO</strong>
-              <span class="up">Optimization</span>
-            </div>
-
-            <div class="stat">
-              <small>Marketing</small>
-              <strong>Growth</strong>
-              <span class="up">Strategy</span>
-            </div>
-          </div>
-
-          <div class="chart">
-            <div class="chart-title">
-              Performance Analytics
-            </div>
-
-            <div class="bars">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-          </div>
-
-          <div style="color:#66a9ff;font-size:10px;margin-top:13px">
-            &gt; Optimizing digital presence<span style="animation:blink 1s infinite"> ▌</span>
-          </div>
-        </div>
-
-      </div>
+  <div class="profile-card">
+    <div class="profile-photo">
+      <img src="profile.jpg" alt="SM Riyad Sagor - Digital Marketing Professional">
     </div>
-
-    <div class="keyboard"></div>
-
-    <div class="status">
-      <i></i> Workspace Active
-    </div>
-
+    <h3>SM Riyad Sagor</h3>
+    <p>Digital Marketing Professional</p>
   </div>
 
 </section>
 
-<section class="about" id="about">
-  <div class="section-title">
-    <span>INTRODUCTION</span>
-    <h2>About Me</h2>
-  </div>
+<!-- ABOUT SECTION -->
+<section id="about">
+  <div class="container">
 
-  <p>
-    My name is SM Riyad Sagor. I am interested in digital
-    marketing and developing practical skills that help
-    businesses build their online presence. My areas of
-    focus include On-page SEO, Off-page SEO, E-commerce
-    Marketing and Affiliate Marketing. This website
-    represents my professional interests, skills and work.
-  </p>
+    <div class="section-title">
+      <h2>About <span>Me</span></h2>
+      <p>Know more about my Digital Marketing journey</p>
+    </div>
+
+    <div class="about-content">
+
+      <div class="box">
+        <h3>Who Am I?</h3>
+
+        <p>
+          Hello! I am SM Riyad Sagor, a Digital Marketing enthusiast
+          interested in helping brands and businesses grow online.
+          My main focus is Digital Marketing, where I explore different
+          strategies to reach the right audience and improve online visibility.
+        </p>
+
+        <p>
+          I am continuously learning and developing my skills in SEO,
+          Social Media Marketing, Google Ads, Facebook Ads, Content Marketing
+          and Digital Marketing Analytics.
+        </p>
+
+        <p>
+          My goal is to build effective marketing strategies and deliver
+          valuable results through creative ideas and continuous improvement.
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>My Focus Areas</h3>
+
+        <div class="points">
+          <div class="point">Digital Marketing</div>
+          <div class="point">Search Engine Optimization</div>
+          <div class="point">Social Media Marketing</div>
+          <div class="point">Facebook Advertising</div>
+          <div class="point">Google Advertising</div>
+          <div class="point">Content Marketing</div>
+          <div class="point">E-commerce Marketing</div>
+          <div class="point">Marketing Analytics</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
+<!-- SERVICES SECTION -->
+<section id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>My <span>Services</span></h2>
+      <p>Digital Marketing solutions and areas of focus</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Digital Marketing</h3>
+        <p>
+          Digital marketing planning, online brand promotion,
+          audience research and business growth strategies.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>SEO</h3>
+        <p>
+          Keyword research, on-page SEO, technical SEO basics
+          and search engine visibility improvement.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Social Media Marketing</h3>
+        <p>
+          Social media content planning, page optimization,
+          audience engagement and brand awareness.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📢</div>
+        <h3>Facebook Ads</h3>
+        <p>
+          Facebook advertising strategy, audience targeting,
+          campaign planning and performance analysis.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Google Ads</h3>
+        <p>
+          Google Ads campaign planning, keyword targeting,
+          search advertising and campaign optimization.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✍️</div>
+        <h3>Content Marketing</h3>
+        <p>
+          Content planning, engaging copywriting,
+          content strategy and brand communication.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛒</div>
+        <h3>E-commerce Marketing</h3>
+        <p>
+          Online store promotion, product marketing,
+          customer engagement and sales growth strategies.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Affiliate Marketing</h3>
+        <p>
+          Affiliate promotion strategies, product research
+          and content-based marketing.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Marketing Analytics</h3>
+        <p>
+          Website traffic analysis, campaign performance
+          tracking and data-driven marketing decisions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
 <section id="skills">
-  <div class="section-title">
-    <span>WHAT I DO</span>
-    <h2>My Expertise</h2>
-  </div>
+  <div class="container">
 
-  <div class="skills-grid">
-    <div class="skill">
-      <div class="number">01</div>
-      <h3>On-Page SEO</h3>
-      <p>Content optimization, keyword research and website structure.</p>
+    <div class="section-title">
+      <h2>My <span>Skills</span></h2>
+      <p>My current learning and professional focus areas</p>
     </div>
 
-    <div class="skill">
-      <div class="number">02</div>
-      <h3>Off-Page SEO</h3>
-      <p>Link building strategies and online authority development.</p>
-    </div>
+    <div class="skill-grid">
 
-    <div class="skill">
-      <div class="number">03</div>
-      <h3>E-commerce Marketing</h3>
-      <p>Online store marketing and digital growth strategies.</p>
-    </div>
+      <div class="skill">
+        <h3>Digital Marketing Strategy</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
 
-    <div class="skill">
-      <div class="number">04</div>
-      <h3>Affiliate Marketing</h3>
-      <p>Affiliate content, promotion and marketing strategies.</p>
-    </div>
+      <div class="skill">
+        <h3>Search Engine Optimization</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
 
-    <div class="skill">
-      <div class="number">05</div>
-      <h3>Digital Marketing</h3>
-      <p>Digital platforms and online brand development.</p>
-    </div>
+      <div class="skill">
+        <h3>Social Media Marketing</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
 
-    <div class="skill">
-      <div class="number">06</div>
-      <h3>SEO Research</h3>
-      <p>Search analysis, keyword planning and optimization.</p>
-    </div>
-  </div>
-</section>
+      <div class="skill">
+        <h3>Facebook & Google Ads</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:70%"></span></div>
+      </div>
 
-<section id="work">
-  <div class="section-title">
-    <span>MY EXPERIENCE</span>
-    <h2>Selected Work</h2>
-  </div>
+      <div class="skill">
+        <h3>Content Marketing</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:75%"></span></div>
+      </div>
 
-  <div class="work-grid">
-    <div class="work">
-      <h3>SEO Projects</h3>
-      <p>Add your real SEO projects, website links and measurable results here.</p>
-    </div>
+      <div class="skill">
+        <h3>Marketing Analytics</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:65%"></span></div>
+      </div>
 
-    <div class="work">
-      <h3>E-commerce Marketing</h3>
-      <p>Showcase actual store campaigns and your contribution.</p>
-    </div>
-
-    <div class="work">
-      <h3>Affiliate Marketing</h3>
-      <p>Share genuine affiliate campaigns and content projects.</p>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="section-title">
-    <span>GET IN TOUCH</span>
-    <h2>Let's Connect</h2>
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>My <span>Portfolio</span></h2>
+      <p>Project ideas and sample work areas</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="card portfolio-card">
+        <div class="category">DIGITAL MARKETING</div>
+        <h3>Digital Marketing Strategy</h3>
+        <p>
+          A sample marketing strategy covering target audience,
+          brand positioning and online promotion planning.
+        </p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">SEARCH ENGINE OPTIMIZATION</div>
+        <h3>SEO Optimization</h3>
+        <p>
+          A sample SEO project focusing on keyword research,
+          on-page optimization and content structure.
+        </p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">SOCIAL MEDIA MARKETING</div>
+        <h3>Social Media Campaign</h3>
+        <p>
+          A sample campaign plan for social media branding,
+          content creation and audience engagement.
+        </p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">FACEBOOK ADVERTISING</div>
+        <h3>Facebook Ads Campaign</h3>
+        <p>
+          A sample advertising plan covering audience research,
+          campaign objectives and ad creative ideas.
+        </p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">GOOGLE ADVERTISING</div>
+        <h3>Google Ads Planning</h3>
+        <p>
+          A sample search advertising plan with keyword ideas,
+          campaign structure and targeting.
+        </p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">CONTENT MARKETING</div>
+        <h3>Content Marketing Plan</h3>
+        <p>
+          A sample content calendar with blog topics,
+          social media content and marketing ideas.
+        </p>
+        <span class="status">Sample Project</span>
+      </div>
+
+    </div>
   </div>
+</section>
 
-  <p>
-    Have a project or business inquiry?<br>
-    Feel free to contact me.
-  </p>
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <div class="container">
 
-  <div class="contact-links">
+    <div class="section-title">
+      <h2>Contact <span>Me</span></h2>
+      <p>Let's connect and discuss Digital Marketing</p>
+    </div>
 
-    <a href="tel:+8801745326418">☎ Call Me</a>
+    <div class="contact-content">
 
-    <a href="https://wa.me/8801745326418"
-       target="_blank">WhatsApp</a>
+      <div class="box">
+        <h3>Get In Touch</h3>
 
-    <a href="mailto:smriyadxsagor@gmail.com">Email Me</a>
+        <div class="contact-item">
+          <h3>📍 Location</h3>
+          <p>Gobindaganj, Gaibandha, Bangladesh</p>
+        </div>
 
-    <a href="https://www.facebook.com/share/19xQR4VRC7/"
-       target="_blank">Facebook</a>
+        <div class="contact-item">
+          <h3>📞 Phone</h3>
+          <a href="tel:+8801745326418">+8801745326418</a>
+        </div>
 
-    <a href="https://www.instagram.com/smriyad00?knvt=a25tYzJiN20ybWMx"
-       target="_blank">Instagram</a>
+        <div class="contact-item">
+          <h3>✉️ Email</h3>
+          <a href="mailto:smriyadxsagor@gmail.com">
+            smriyadxsagor@gmail.com
+          </a>
+        </div>
 
+        <div class="contact-item">
+          <h3>🌐 Facebook</h3>
+          <a href="https://www.facebook.com/share/19xQR4VRC7/"
+             target="_blank" rel="noopener noreferrer">
+            Visit My Facebook Profile
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <h3>📸 Instagram</h3>
+          <a href="https://www.instagram.com/smriyad00?knvt=a25tYzJiN20ybWMx"
+             target="_blank" rel="noopener noreferrer">
+            Visit My Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Let's Work Together</h3>
+        <p>
+          Are you looking for Digital Marketing ideas to grow your
+          business online? Let's connect and explore how digital
+          marketing strategies can support your goals.
+        </p>
+
+        <p class="contact-note">
+          I am interested in learning, collaborating and exploring
+          new opportunities in Digital Marketing.
+        </p>
+
+        <a class="btn" href="mailto:smriyadxsagor@gmail.com">
+          Send Me an Email
+        </a>
+
+        <a class="btn btn-outline"
+           href="https://www.facebook.com/share/19xQR4VRC7/"
+           target="_blank" rel="noopener noreferrer">
+          Message on Facebook
+        </a>
+      </div>
+
+    </div>
   </div>
-
-  <p>📍 Gobindaganj, Gaibandha, Bangladesh</p>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer>
-  © 2026 SM Riyad Sagor. All Rights Reserved.
-  <br><br>
-  Digital Marketing Professional
+  <div class="container">
+    <p>
+      © <span id="year"></span> <span>SM Riyad Sagor</span>.
+      All Rights Reserved.
+    </p>
+    <p>Digital Marketing Professional | Bangladesh</p>
+  </div>
 </footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", function() {
+  navMenu.classList.toggle("active");
+  const isOpen = navMenu.classList.contains("active");
+  menuBtn.setAttribute("aria-expanded", isOpen);
+  menuBtn.textContent = isOpen ? "×" : "☰";
+});
+
+document.querySelectorAll("#navMenu a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navMenu.classList.remove("active");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
+  });
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
 
 </body>
 </html>
