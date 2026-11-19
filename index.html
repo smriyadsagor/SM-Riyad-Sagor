@@ -4,19 +4,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SM Riyad Sagor - Digital Marketing Professional. Digital Marketing, SEO, Social Media Marketing, Google Ads and Facebook Ads.">
-<meta name="keywords" content="Digital Marketing, SEO, Social Media Marketing, Facebook Ads, Google Ads">
-<meta name="author" content="SM Riyad Sagor">
+<meta name="description" content="SM Riyad Sagor - Digital Marketing Professional">
 <title>SM Riyad Sagor | Digital Marketing Professional</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 <style>
 :root {
   --bg: #080d1b;
-  --card: #111b30;
+  --section: #0d1527;
+  --card: #111d32;
   --blue: #368bff;
   --light: #75b5ff;
   --white: #f5f8ff;
@@ -39,8 +40,8 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -49,11 +50,13 @@ a {
   margin: auto;
 }
 
+/* HEADER */
+
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(8,13,27,.96);
+  background: rgba(8,13,27,.97);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
 }
@@ -68,6 +71,7 @@ header {
 .logo {
   font-size: 22px;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .logo span {
@@ -76,8 +80,8 @@ header {
 
 nav {
   display: flex;
-  gap: 23px;
   align-items: center;
+  gap: 22px;
 }
 
 nav a {
@@ -95,16 +99,18 @@ nav a:hover {
   background: none;
   border: none;
   color: white;
-  font-size: 28px;
+  font-size: 27px;
   cursor: pointer;
 }
+
+/* HOME */
 
 .hero {
   min-height: 650px;
   display: grid;
   grid-template-columns: 1.3fr .7fr;
   align-items: center;
-  gap: 50px;
+  gap: 45px;
   padding-top: 65px;
   padding-bottom: 65px;
 }
@@ -197,6 +203,8 @@ nav a:hover {
   font-size: 13px;
 }
 
+/* COMMON SECTIONS */
+
 section {
   padding: 85px 0;
   scroll-margin-top: 75px;
@@ -204,11 +212,11 @@ section {
 
 .section-title {
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 }
 
 .section-title h2 {
-  font-size: clamp(27px,4vw,38px);
+  font-size: clamp(28px,4vw,40px);
   margin-bottom: 8px;
 }
 
@@ -220,6 +228,8 @@ section {
   color: var(--muted);
   font-size: 13px;
 }
+
+/* ABOUT */
 
 .about-content {
   display: grid;
@@ -249,6 +259,7 @@ section {
 .box p, .card p {
   color: var(--muted);
   font-size: 13px;
+  margin-bottom: 12px;
 }
 
 .points {
@@ -266,6 +277,8 @@ section {
   color: var(--light);
 }
 
+/* SERVICES */
+
 .services-grid, .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -273,9 +286,11 @@ section {
 }
 
 .icon {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 12px;
 }
+
+/* SKILLS */
 
 .skill-grid {
   display: grid;
@@ -292,7 +307,7 @@ section {
 
 .skill h3 {
   font-size: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .skill small {
@@ -304,7 +319,7 @@ section {
   height: 8px;
   background: #263650;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 12px;
   overflow: hidden;
 }
 
@@ -315,18 +330,16 @@ section {
   border-radius: 10px;
 }
 
+/* PORTFOLIO */
+
 .portfolio-card {
-  min-height: 210px;
+  min-height: 215px;
 }
 
-.portfolio-card .category {
+.category {
   color: var(--light);
   font-size: 11px;
   margin-bottom: 12px;
-}
-
-.portfolio-card h3 {
-  margin-bottom: 10px;
 }
 
 .status {
@@ -336,56 +349,103 @@ section {
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 10px;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+/* CONTACT */
+
+#contact {
+  background: var(--section);
+  text-align: center;
+  padding: 105px 0 115px;
 }
 
-.contact-item {
-  background: var(--card);
-  border: 1px solid var(--border);
-  padding: 18px;
-  border-radius: 10px;
-  margin-bottom: 13px;
-}
-
-.contact-item h3 {
-  color: var(--light);
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.contact-item p, .contact-item a {
-  font-size: 13px;
-  color: var(--muted);
-  overflow-wrap: anywhere;
-}
-
-.contact-item a:hover {
+.contact-heading {
   color: var(--blue);
+  letter-spacing: 4px;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 
-.contact-note {
-  color: var(--muted);
-  font-size: 13px;
-  margin-top: 15px;
+.contact-title {
+  font-size: clamp(34px,5vw,52px);
+  margin-bottom: 65px;
 }
+
+.contact-description {
+  color: var(--muted);
+  font-size: clamp(16px,3vw,25px);
+  line-height: 1.9;
+  margin-bottom: 42px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  max-width: 750px;
+  margin: auto;
+}
+
+.contact-btn {
+  min-width: 150px;
+  padding: 17px 22px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  border-radius: 13px;
+  background: #192b44;
+  border: 1px solid #344b6a;
+  color: white;
+  font-size: 17px;
+  transition: .3s;
+}
+
+.contact-btn i {
+  font-size: 21px;
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px);
+  background: #213b60;
+  border-color: var(--blue);
+}
+
+.phone-icon { color: #8fc2ff; }
+.whatsapp-icon { color: #25D366; }
+.email-icon { color: #ff766c; }
+.facebook-icon { color: #1877F2; }
+.instagram-icon { color: #E4405F; }
+
+.location {
+  color: var(--muted);
+  font-size: clamp(15px,3vw,23px);
+  margin-top: 38px;
+}
+
+.location i {
+  color: #ff5555;
+  margin-right: 8px;
+}
+
+/* FOOTER */
 
 footer {
   border-top: 1px solid var(--border);
-  padding: 25px 0;
+  padding: 28px 0;
   text-align: center;
-  color: var(--muted);
-  font-size: 12px;
+  color: #8997ad;
+  font-size: 13px;
 }
 
 footer span {
   color: var(--blue);
 }
+
+/* RESPONSIVE */
 
 @media(max-width:850px) {
   nav {
@@ -394,10 +454,6 @@ footer span {
 
   nav a {
     font-size: 11px;
-  }
-
-  .hero {
-    gap: 25px;
   }
 
   .services-grid, .portfolio-grid {
@@ -439,26 +495,36 @@ footer span {
     padding-top: 55px;
   }
 
-  .hero p {
-    font-size: 13px;
-  }
-
   .profile-card {
     max-width: 350px;
     margin: auto;
     width: 100%;
   }
 
-  .profile-photo {
-    height: 320px;
-  }
-
-  .about-content, .contact-content {
+  .about-content {
     grid-template-columns: 1fr;
   }
 
   .services-grid, .portfolio-grid, .skill-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-btn {
+    min-width: 145px;
+    font-size: 15px;
+    padding: 15px 16px;
+  }
+
+  #contact {
+    padding: 75px 0 85px;
+  }
+
+  .contact-title {
+    margin-bottom: 45px;
+  }
+
+  .contact-description {
+    margin-bottom: 30px;
   }
 
   section {
@@ -472,9 +538,15 @@ footer span {
 
 <header>
   <div class="container navbar">
-    <a href="#home" class="logo">SM <span>RIYAD</span></a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a href="#home" class="logo">
+      SM RIYAD <span>SAGOR.</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn"
+      aria-label="Open menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
     <nav id="navMenu">
       <a href="#home">Home</a>
@@ -484,12 +556,12 @@ footer span {
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
+
   </div>
 </header>
 
 <main>
 
-<!-- HOME SECTION -->
 <section class="hero container" id="home">
 
   <div>
@@ -501,9 +573,9 @@ footer span {
 
     <p>
       I am passionate about Digital Marketing and online business growth.
-      I focus on helping businesses build their online presence through
-      Digital Marketing Strategy, SEO, Social Media Marketing, Facebook Ads,
-      Google Ads and Content Marketing.
+      I focus on Digital Marketing Strategy, SEO, Social Media Marketing,
+      Facebook Ads, Google Ads and Content Marketing.
+      My goal is to help businesses build a strong online presence.
     </p>
 
     <a href="#services" class="btn">Explore My Services</a>
@@ -512,7 +584,7 @@ footer span {
 
   <div class="profile-card">
     <div class="profile-photo">
-      <img src="profile.jpg" alt="SM Riyad Sagor - Digital Marketing Professional">
+      <img src="profile.jpg" alt="SM Riyad Sagor">
     </div>
     <h3>SM Riyad Sagor</h3>
     <p>Digital Marketing Professional</p>
@@ -520,7 +592,6 @@ footer span {
 
 </section>
 
-<!-- ABOUT SECTION -->
 <section id="about">
   <div class="container">
 
@@ -537,19 +608,18 @@ footer span {
         <p>
           Hello! I am SM Riyad Sagor, a Digital Marketing enthusiast
           interested in helping brands and businesses grow online.
-          My main focus is Digital Marketing, where I explore different
-          strategies to reach the right audience and improve online visibility.
+          My main focus is Digital Marketing and online promotion.
         </p>
 
         <p>
           I am continuously learning and developing my skills in SEO,
-          Social Media Marketing, Google Ads, Facebook Ads, Content Marketing
-          and Digital Marketing Analytics.
+          Social Media Marketing, Facebook Ads, Google Ads,
+          Content Marketing and Marketing Analytics.
         </p>
 
         <p>
-          My goal is to build effective marketing strategies and deliver
-          valuable results through creative ideas and continuous improvement.
+          My goal is to build effective marketing strategies,
+          understand audiences and create valuable online experiences.
         </p>
       </div>
 
@@ -558,9 +628,292 @@ footer span {
 
         <div class="points">
           <div class="point">Digital Marketing</div>
-          <div class="point">Search Engine Optimization</div>
+          <div class="point">SEO</div>
           <div class="point">Social Media Marketing</div>
-          <div class="point">Facebook Advertising</div>
+          <div class="point">Facebook Ads</div>
+          <div class="point">Google Ads</div>
+          <div class="point">Content Marketing</div>
+          <div class="point">E-commerce Marketing</div>
+          <div class="point">Marketing Analytics</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>My <span>Services</span></h2>
+      <p>Digital Marketing solutions and focus areas</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Digital Marketing</h3>
+        <p>Marketing strategy, online promotion, audience research and brand growth planning.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>SEO</h3>
+        <p>Keyword research, on-page SEO, technical SEO basics and search visibility.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Social Media Marketing</h3>
+        <p>Social media content planning, page optimization and audience engagement.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📢</div>
+        <h3>Facebook Ads</h3>
+        <p>Audience targeting, campaign planning and advertising strategy.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Google Ads</h3>
+        <p>Keyword targeting, search advertising and campaign planning.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✍️</div>
+        <h3>Content Marketing</h3>
+        <p>Content planning, copywriting, content strategy and brand communication.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛒</div>
+        <h3>E-commerce Marketing</h3>
+        <p>Online store promotion, product marketing and customer engagement.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Affiliate Marketing</h3>
+        <p>Affiliate promotion strategy, product research and content-based marketing.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Marketing Analytics</h3>
+        <p>Traffic analysis, campaign tracking and data-driven marketing decisions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>My <span>Skills</span></h2>
+      <p>My learning and professional focus areas</p>
+    </div>
+
+    <div class="skill-grid">
+
+      <div class="skill">
+        <h3>Digital Marketing Strategy</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
+
+      <div class="skill">
+        <h3>Search Engine Optimization</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
+
+      <div class="skill">
+        <h3>Social Media Marketing</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
+
+      <div class="skill">
+        <h3>Facebook & Google Ads</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:70%"></span></div>
+      </div>
+
+      <div class="skill">
+        <h3>Content Marketing</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:75%"></span></div>
+      </div>
+
+      <div class="skill">
+        <h3>Marketing Analytics</h3>
+        <small>Learning & Focus Area</small>
+        <div class="bar"><span style="width:65%"></span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>My <span>Portfolio</span></h2>
+      <p>Sample projects and marketing work areas</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="card portfolio-card">
+        <div class="category">DIGITAL MARKETING</div>
+        <h3>Digital Marketing Strategy</h3>
+        <p>Sample marketing strategy covering audience research, brand positioning and online promotion.</p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">SEO</div>
+        <h3>SEO Optimization</h3>
+        <p>Sample SEO work focusing on keyword research and on-page optimization.</p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">SOCIAL MEDIA</div>
+        <h3>Social Media Campaign</h3>
+        <p>Sample social media plan for branding, content creation and audience engagement.</p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">FACEBOOK ADS</div>
+        <h3>Facebook Ads Campaign</h3>
+        <p>Sample advertising plan with audience research and campaign objectives.</p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">GOOGLE ADS</div>
+        <h3>Google Ads Planning</h3>
+        <p>Sample search advertising plan with keywords and campaign structure.</p>
+        <span class="status">Sample Project</span>
+      </div>
+
+      <div class="card portfolio-card">
+        <div class="category">CONTENT MARKETING</div>
+        <h3>Content Marketing Plan</h3>
+        <p>Sample content calendar with blog topics and social media ideas.</p>
+        <span class="status">Sample Project</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+
+  <div class="container">
+
+    <p class="contact-heading">GET IN TOUCH</p>
+
+    <h2 class="contact-title">Let's Connect</h2>
+
+    <p class="contact-description">
+      Have a project or business inquiry?<br>
+      Feel free to contact me.
+    </p>
+
+    <div class="contact-buttons">
+
+      <a class="contact-btn" href="tel:+8801745326418">
+        <i class="fa-solid fa-phone phone-icon"></i>
+        <span>Call Me</span>
+      </a>
+
+      <a class="contact-btn"
+         href="https://wa.me/8801745326418"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+        <span>WhatsApp</span>
+      </a>
+
+      <a class="contact-btn"
+         href="mailto:smriyadxsagor@gmail.com">
+        <i class="fa-solid fa-envelope email-icon"></i>
+        <span>Email Me</span>
+      </a>
+
+      <a class="contact-btn"
+         href="https://www.facebook.com/share/19xQR4VRC7/"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook facebook-icon"></i>
+        <span>Facebook</span>
+      </a>
+
+      <a class="contact-btn"
+         href="https://www.instagram.com/smriyad00?knvt=a25tYzJiN20ybWMx"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram instagram-icon"></i>
+        <span>Instagram</span>
+      </a>
+
+    </div>
+
+    <p class="location">
+      <i class="fa-solid fa-location-dot"></i>
+      Gobindaganj, Gaibandha, Bangladesh
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> SM Riyad Sagor. All Rights Reserved.</p>
+    <p>Digital Marketing Professional</p>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", function() {
+  navMenu.classList.toggle("active");
+
+  const isOpen = navMenu.classList.contains("active");
+
+  menuBtn.setAttribute("aria-expanded", isOpen);
+
+  menuBtn.innerHTML = isOpen
+    ? '<i class="fa-solid fa-xmark"></i>'
+    : '<i class="fa-solid fa-bars"></i>';
+});
+
+document.querySelectorAll("#navMenu a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navMenu.classList.remove("active");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  });
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
+="point">Facebook Advertising</div>
           <div class="point">Google Advertising</div>
           <div class="point">Content Marketing</div>
           <div class="point">E-commerce Marketing</div>
